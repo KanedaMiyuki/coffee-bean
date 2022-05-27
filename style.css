@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap');
+
+/* font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif; 
+  color values
+  #96746b
+  #c7a17a
+  #321a26
+  #ffffff = white =#fff
+  #19100F
+  #f2f2f2
+  */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section1 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+
+}
+
+p {
+  font-family: 'Raleway', sans-serif; 
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.nav {
+  /* border: solid red; */
+  width: 85%;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.nav h1 a {
+  /* border: dashed aqua; */
+  float: left;
+  text-decoration: none;
+  color: #96746b;
+
+}
+
+.nav ul {
+  /* border: dashed darkorchid; */
+  float: right;
+  margin: 1em auto;
+}
+
+.nav ul li {
+  /* border: dashed blue; */
+  display: inline;
+
+}
+
+.nav ul li a {
+  margin-left: 1em;
+  text-decoration: none;
+  /* font-family: 'raleay', sans-serif; */
+  color: #321a26;
+  font-weight:700;
+}
+  
+/* end of header section 1*/
+
+
+/* start of Banner section 2*/
+.banner {
+  height: 670px;
+  background-image: url(../images/banner-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  /* position: relative; */
+}
+
+.banner-text {
+  /* border: 3px dashed darkgoldenrod; */
+  position: absolute;
+  left: 7.5%;
+  top: 50%; 
+  /* transform: translate (right and left (-でleft方向へ), top and bottom(-でtop方向へ)  */
+  transform: translate(0,-50%);
+}
+
+.banner-text h2 {
+  color:#c7a17a;
+  text-transform: uppercase;
+  font-size: 4em;  
+
+}
+
+.banner-text span {
+  color: #96746b;
+
+}
+
+.banner-text p {
+  color: #fff;
+
+}
+
+.banner-text a {
+  font-family: 'Raleway', sans-serif; 
+  background-color: #321a26;
+  color: #fff;
+  text-decoration: none;  
+  padding: 1em; 
+  margin-top: 1em;
+  /* a tagはinlineなのでh2タグにかぶってしまうのを防ぐにはblockに変更しなければならない。
+  blockにすると範囲全てに表示されるので、ここで使用するのはinline-blockとなる。 */
+  display: inline-block;
+
+}
+
+
+/* Ads Section 3 */
+
+.ads {
+  /* border: 5px solid red; */
+  width: 85%;
+  /* margin :4em auto;で全体にmarginを入れておく */
+  margin: 4em auto;
+  /* 私の作ったコード
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; */
+  overflow: auto; 
+  /* position: relative; */
+}
+
+
+.ads-items {
+  /* border: 3px solid blue; */
+  height: 400px;
+  width: 49%;
+  float: left;
+  margin-right: 2%;
+  /* parentがないので親であるads-itemsにposition:relative;を入れる
+   */
+  position: relative;
+}
+
+.ads-items:nth-child(2) {
+  margin-right: 0;
+}
+
+
+.ads-img1 {
+  background-image: url(../images/ads-img1.jpg);
+  /* 下記はad-itemsに組み込んでもよし */
+  background-position: center;
+  background-size: cover;
+  /* .ads-items:nth-child(2) を使わない場合はここに
+  margin-right:2%;を入力してもよい
+ */
+
+}
+
+.ads-img2 {
+  background-image: url(../images/ads-img2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.ads-items h3 {
+  /* border: 3px dashed darkgoldenrod; */
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px #312a26;
+
+  /* 親ads-itemsにposition:relative;を入れたので子である.ads-textにposition:absolute;を入れる   */
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0,-50%);
+  width: 45%;
+  /* line-heightで行間を調節できる */
+  line-height: 1em;
+}
+
+
+.ads-items a {
+  /* border: 3px dashed green; */
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 63%;
+  left: 10%;
+  
+  /* margin-top: 1em;
+  display: inline-block; */
+}
+
+
+
+
+/* Merchandise Section 4 */
+.merch {
+  /* border: 5px solid red; */
+  width: 85%;
+  margin: 4em auto;
+}
+
+
+
+.merch-items {
+  /* border: 3px dashed red; */
+  width: 24%;
+  float: left;
+  margin-right: 1.3%;
+}
+
+.merch-items:nth-child(4),
+.merch-items:nth-child(8)  {
+  margin-right: 0;
+}
+
+
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #312a26;
+}
+
+.section-header span {
+  font-style: italic;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 500;
+  color: #c7a17a;
+}
+
+.section-header h2{
+  color: #312a26;
+  text-transform: uppercase;
+}
+
+.section-header hr {
+  background-color: #c7a17a;
+  height: 2px;
+  width: 25%;
+  /* 水平線を中心に持ってきたい時↓ */
+  margin: auto;
+}
+
+.merch-gallery {
+  /* border: 4px solid blue; */
+  overflow: auto;
+}
+
+.merch-gallery img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+/* Discount Section 5 */
+.discount {
+  /* border: 5px solid red; */
+  width: 85%;
+  height: 350px;
+  margin: 4em auto;
+  position: relative;
+}
+
+/* img */
+.discount {
+  background-image: url(../images/discount-img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.discount-text {
+  /* border: 3px dashed yellow; */
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.discount-text span {
+  color: #fff;
+  font-style: italic;
+}
+
+.discount-text h2 {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px #312a26;
+
+}
+
+.discount-text a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, .5);
+  color: #312a26;
+  font-weight: 700;
+  color: #312a26;
+  /* opacityは透明度 1 = 完全に見える 
+  今回はcolorでrgbaを使用*/
+  /* opacity: 0.7; */
+  padding: 1em; 
+  margin-top: 1em;
+  display: inline-block;
+}
+
+/* Merchandise Sales Section 6 */
+
+.merch-sale {
+  /* border: 5px solid red; */
+  width: 85%;
+  margin: 4em auto;
+}
+
+/* Ads2s Section 7 */
+.ads2 {
+  /* border: 5px solid red; */
+  width: 85%;
+  margin: 4em auto;
+  overflow: auto;
+}
+
+.ads-items {
+  height: 350px;
+  width: 49%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  position: relative;
+}
+
+.ads-img3 {
+background-image: url(../images/ads-img3.jpg);
+background-position: center;
+background-size: cover;
+/* margin-bottom: 2%;ここにいれてもよし */
+}
+
+.ads-img4 {
+  background-image: url(../images/ads-img4.jpg);
+  background-position: center;
+  background-size: cover;
+/* margin-bottom: 2%;ここにいれてもよし */
+}
+
+.ads-img5 {
+  background-image: url(../images/ads-img5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ads-img6 {
+  background-image: url(../images/ads-img6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.ads-items:nth-child(2),
+.ads-items:nth-child(4) {
+  margin-right: 0;
+}
+
+/* ads-image4と5にmargin-bottomを入れてたら下記入力不要 */
+.ads-items:nth-child(3),
+.ads-items:nth-child(4) {
+  margin-bottom: 0;
+}
+
+/* Resevation Section 8 */
+.reservation {
+  /* border: 5px solid red; */
+  width: 85%;
+  margin: 2em auto;
+  overflow: auto;
+}
+
+.form-group {
+  /* border: 3px solid darkgoldenrod; */
+  background-color: #f2f2f2;
+  width: 49%;
+  height: 650px;
+  padding: 2em;
+  float: left;
+  margin-right: 2%;
+}
+
+.form-group:nth-child(2) {
+  margin-right: 0;
+}
+
+/* フォームのフォントスタイル、文字サイズ、入力箇所の横幅 */
+input, label, select, textarea, #date {
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 700;
+  margin-bottom: .5em;
+  /* input, label, select, textareaはinlineなので変更要 */
+  display: inline-block;
+  width: 100%;
+}
+
+/* 入力箇所の大きさ調整 */
+input, label, select {
+  padding: 10px 10px;
+  margin-bottom: 5px;
+}
+
+/* Reservation Timeの部分 */
+.res-time {
+  text-align: center;
+}
+
+/* Reservation Details, Reservation Time, PAYMENT,Payment Accepted Cardsの文字 */
+.form-group h3,
+.form-group p {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+/* 選択部分の表示を横並びにする */
+.res-time * {
+  width: auto;
+}
+
+.res-agreement * {
+  width: auto;
+}
+
+/* SENDボタン */
+#submit {
+  background-color: #c7a17a;
+  width: 100%;
+}
+
+/* Psuedo Element
+
+      -insert content before or after of the content element
+*/
+
+form h3::after {
+  height: 30px;
+  width: 150px;
+  content: "";
+  background-image: url(..//images/reservation-cards.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin: auto;
+}
+
+ /* Footer Section 9  */
+.footer {
+  /* border: 5px solid red; */
+  background-image: url(../images/footer-img.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 2em;
+  
+}
+
+.footer-contents {
+  /* border: 4px solid blue; */
+  width: 85%;
+  height: 300px;
+  margin: 2em auto;
+  overflow: auto;
+}
+
+.footer-widgets {
+  /* border: 3px dashed darkgoldenrod; */
+  width: 24.25%;
+  height: 100%;
+  float: left;
+  margin-right: 1%;
+}
+
+.footer-widgets:nth-child(4) {
+  margin-right: 0;
+}
+
+.footer-contents h3,
+.footer-contents h4,
+.footer-widgets table {
+  color: #fff;
+
+}
+
+.footer-contents p {
+  color: #c7a17a;
+  margin-bottom: 2px;
+
+}
+
+.footer-contents h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-form input {
+width: auto;
+}
+
+#footer-submit {
+background-color: #c7a17a;
+}
+
+ /* end of Footer Section 9  */
+
+ /* Footer Social Section 10  */
+.footer-social {
+   /* border: 5px solid red; */
+   background-color: #19100f;
+   overflow: auto;
+   padding-top: 2em;   
+}
+
+.social-widget {
+   /* border: 3px solid blue; */
+   color: #fff;
+   width: 33.2%;
+   height: 70px;
+   float: left;
+   text-align: center;
+   padding-top: 20px;    
+}
+
+.social-widget img {
+   width: 30px;
+}
+
+ /* top */
+
+.top {
+   background-color: #19100f;
+   color: #fff;
+   font-family: 'Raleway', sans-serif; 
+   padding: 15px 15px;
+   text-decoration: none;
+   font-weight: 900;
+   position: fixed;
+   height: 3em;
+   right: 20px;
+   bottom: 0;
+  
+}
+
