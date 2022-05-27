@@ -475,6 +475,7 @@ form h3::after {
   background-image: url(../images/footer-img.jpg);
   background-position: center;
   background-size: cover;
+  padding-bottom: 2em;
   
 }
 
@@ -527,14 +528,14 @@ background-color: #c7a17a;
  /* end of Footer Section 9  */
 
  /* Footer Social Section 10  */
- .footer-social {
+.footer-social {
    /* border: 5px solid red; */
    background-color: #19100f;
    overflow: auto;
-   
- }
+   padding-top: 2em;   
+}
 
- .social-widget {
+.social-widget {
    /* border: 3px solid blue; */
    color: #fff;
    width: 33.2%;
@@ -542,15 +543,15 @@ background-color: #c7a17a;
    float: left;
    text-align: center;
    padding-top: 20px;    
- }
+}
 
- .social-widget img {
+.social-widget img {
    width: 30px;
- }
+}
 
  /* top */
 
- .top {
+.top {
    background-color: #19100f;
    color: #fff;
    font-family: 'Raleway', sans-serif; 
@@ -562,5 +563,5 @@ background-color: #c7a17a;
    right: 20px;
    bottom: 0;
   
-  }
+}
 
